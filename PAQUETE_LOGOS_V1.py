@@ -161,7 +161,7 @@ else:
             for f, data in all_files:
                 if f == fname:
                     img = Image.open(BytesIO(data))
-                    fondo = "blanco" if color == "white' else 'negro'"
+                    fondo = "blanco" if color == "'white' else 'negro'"
                     st.image(img, caption=f"{base_name} - 64x64 fondo {fondo}", width=64)
 
     zip_buf = BytesIO()
